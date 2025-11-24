@@ -1,0 +1,475 @@
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background:
+  radial-gradient(circle at 30% 20%, rgba(116,29,35,0.4), transparent 40%),
+  radial-gradient(circle at 70% 80%, rgba(116,29,35,0.3), transparent 50%),
+  radial-gradient(circle at 15% 30%, rgba(116,29,35,0.3), transparent 20%),
+  radial-gradient(circle at 95% 5%, rgba(116,29,35,0.6), transparent 25%),
+  radial-gradient(circle at 20% 95%, rgba(116,29,35,0.3), transparent 20%),
+  #000;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+body::after {
+  mix-blend-mode: screen;
+}
+
+body
+#menuSection {    
+    font-family: "Great Vibes", cursive;
+    font-weight: 300;
+    font-style: normal;
+    color: rgba(116, 29, 35);
+    border-right: 2px solid rgba(116, 29, 35);
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    
+}
+#menuSection, #menu {
+    display: flex;
+    width: 210px;   
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#logoIMG {
+    width: 200px;
+    height: 200px;
+    margin-left: 5px
+}
+#bottomLogoIMG {
+    width: 100px;
+    height: 100px; 
+    margin-top: 20px;  
+}
+
+
+h2 {
+    margin: 0 0;
+    font-size: 1.85rem;
+    font-weight: 350;
+    text-align: center;
+}
+
+#horizontalRule {
+    width: 100%;
+    height: 70px;
+}
+
+.curlyRuler {
+    height: 19px;
+    width: 188px
+}
+
+.menuItem {
+    text-decoration: none;
+    color: #f5e6d3;
+    font-size: 1.45rem;
+    font-weight: 300;
+    font-style: normal;
+    padding-bottom: 15px;
+}
+
+.menuItem:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+#mainContentSection, #winesContentSection {
+    margin-left: 210px;
+    color: #f5e6d3;
+    font-family: "Great Vibes", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+}
+ 
+#since {
+    text-align: center;
+    margin: 0;
+    padding-left: 535px;
+}
+
+
+#divIMG {
+    background-image: url('./assets/PanoIMG.jpg');
+    height: 300px;
+    width: 100%;
+    margin-left: 212px;
+    margin-top: 100px;
+    background-size: 90% 300px;
+    background-repeat: no-repeat;
+}
+
+#bottleContainer {
+    width: 100%;
+    height: 300px;
+    backdrop-filter: blur(6px);
+}
+
+.bottles {
+    position: relative;
+    left: 90%;
+    top: 0px;
+    width: 200px;
+    height: 300px;
+    z-index: 2;
+    filter:unset;
+    transform: rotateZ(12deg);
+    cursor: pointer;
+}
+#estateGold.lefted {
+    left: 30%;
+    transition: left 0.5s ease-in-out;
+} 
+#Chardonnay.lefted {
+    left: 50%;
+    transition: left 0.5s ease-in-out;
+}
+#CabSav.lefted {
+    left: 70%;
+    transition: left 0.5s ease-in-out;
+}
+
+#IMGTitle {
+    font-family: "Great Vibes", cursive;
+    font-weight: 300;
+    font-style: normal;
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    transform: translateX(-50%);
+    color: black ;
+    font-size: 2.2rem;
+    z-index: 3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/*---------------------------Wines.html-----------------------*/
+
+
+.winesIMG {
+    width: 220px;
+  height: 325px;
+  object-fit: cover;
+  border: solid 2px wheat;
+  transition: transform 0.3s ease-in-out, z-index 0.5s ease-in-out;
+  position: relative;          /* fontos: z-index működjön */
+  z-index: 1;                  /* alaphelyzetben alacsonyabb */
+  will-change: transform;
+  cursor: zoom-in; 
+}
+.winesIMG.zoomed {
+    transform-origin: center;
+    transform: scale(2); 
+    cursor: zoom-out;
+    transition: transform 0.3s ease-in-out, z-index 0s ease-in-out;
+    z-index: 1000;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 95%);
+    z-index: 750;
+    opacity:0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#overlay.visible {
+    opacity: 1;
+     transition: opacity 0.6s ease-in-out;
+}
+
+#winesDIV  {
+    margin-top: 200px;
+    margin-left: 100px
+}
+
+.wineIMGcontainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 300px;
+}
+
+.wineDescription {
+    font-size: 1.5rem;
+    width: 300px;
+    margin-top: 35px;
+    font-weight: lighter;
+    }
+
+.wineTitle {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.wines {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.rightArrow, .leftArrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.arrow {
+    width: 50px;
+    height: 50px;
+}
+
+.zoomedLeftArrow, .zoomedRightArrow {
+    position: fixed;
+    top: 50%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+    left: 250px;
+}
+.zoomedLeftArrow {
+   left: 32%;
+} .zoomedRightArrow {
+    left: 65%;
+}
+
+
+/*-------------AboutUs.html---------------*/
+
+
+
+#aboutUsImages, #aboutUsIMG {
+    width: 30vw;
+    height: 55vh;
+    z-index: 1;
+    border-radius: 10%;
+}
+
+
+#aboutUsContent {
+    display: flex; /* Marad a flex a tartalom elrendezéséhez */
+    justify-content: center;
+    align-items: center;
+    margin-left: 210px;
+    width: auto;
+    height: 100vh;
+    
+    /* 🛑 KIVESSZÜK a background-image-et és z-indexet! */
+    position: relative; /* Fontos a gyermek elemek pozícionálásához */
+}
+
+/* 🟢 ÚJ ELEM: A borderImage.png KÉP, ami ELŐL VAN */
+#borderImageEloter {
+    position: absolute;
+    top: 0;
+    left: center;
+    width: 80vw;
+    height: 80vh;
+    margin-left: 175px;
+    
+    /* Beállítjuk rá az eredeti PNG képedet */
+    background-image: url("./assets/aboutus/borderImage.png");
+    background-repeat: no-repeat;  
+    background-size: 60vw 100vh;
+    
+    /* 🟢 EZ VISZI ELŐRE */
+    z-index: 100; 
+}
+
+/* A HÁTSÓ TARTALOM RÉTEGE */
+#aboutUsBorderIMGDiv {
+    position: relative; /* Vagy absolute, a kívánt elrendezéstől függően */
+    width: 80%; /* Példa szélesség, hogy beleférjen */
+    /* 🛑 EZ LESZ HÁTUL */
+    z-index: 10; /* Kisebb, mint a #borderImageEloter z-indexe */
+   left: 17.5%;
+   height: 500px;
+   margin-bottom: 0;
+}
+
+#textPara {
+    font-family: "Great Vibes", cursive;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.5em;
+    text-align: center;
+    color: #f5e6d3;
+    height: fit-content;
+    width: 60%;
+}
+
+#aboutUsTextDiv {
+    display:flex;
+    margin-left: -230px;
+    width: 100%;
+    z-index: 500;
+}
+
+.leftArrow.aboutUsArrow.disabled, .rightArrow.aboutUsArrow.disabled  {
+    display: none;
+}
+.aboutUsArrow {
+    align-self: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    }
+
+
+/*-----------------------Winetasting.html---------------------------------*/
+
+#wineTastingContent {
+
+    color: #f5e6d3;
+    font-family: "Great Vibes", cursive;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.wineTastingTitles {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.textArea {
+    width: 50%;
+    height: 20px;
+    float: right;
+}
+
+#horizontalRulerWinetasting {
+    width:  80%;
+    height: 200px;
+}
+
+#wineTastingEventImage {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    margin: 20px;
+}
+#wineTastingEventDisplay {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#wineTastingEventText {
+    width: 40%;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+#wineTastingEventParagraph {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+#wineTastingLeftArrow {
+float: left;
+padding: 0;
+padding-top: 150px;
+}
+#wineTastingRightArrow {
+float: right;
+padding: 0;
+padding-top: 150px;
+}
+#horizontalRuler2 {
+    width:  80%;
+    height: 150px;
+    margin-top: 50px;
+}
+#sendButton {
+    background-color: transparent;
+    color: #f5e6d3;
+    font-family: "Great Vibes", cursive;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+#sendButton:hover {
+    font-size: 1.7rem;
+    transition: all 0.3s ease-in-out;
+}
+#customEventh2 {
+    margin: 50px;
+    font-size: 2.5rem;
+}
+#selectDiv {
+    display: inline-block;
+    text-align : left;
+}
+#event {
+    float:right;
+}
+
+/*-----------------------contact.html---------------------------------*/
+
+#contactContent {
+    color: #f5e6d3;
+    font-family: "Great Vibes", cursive;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.5em;
+    text-align: center;
+}
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+.contactPhoto {
+    width: 50px;
+    height: 50px;
+    gap: 20px;
+    padding-right: 20px;
+}
+#githubLink {
+    text-decoration: none;
+    color: #f5e6d3;
+}
+ul{
+    display: inline-block;
+    text-align: left;
+}
+.contactLI {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel's winery</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merienda:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section id="menuSection">
+        <div id="logo">
+            <img id="logoIMG" src="./assets/winerylogo.png" alt="logo">
+            <img id="horizontalRule" src="./assets/menuHorRuler.svg" alt="horizontal ruler">
+        </div>
+        <div id="motto">
+            <h2>Wine is our passion.</h2>
+            <img class="curlyRuler" src="./assets/menuCurlyRuler.svg" alt="curly ruler">
+        </div>
+        <div id="menu">
+            <a href="index.html" class="menuItem">Home</a>
+            <a href="./wines.html" class="menuItem">Wines</a>
+            <a href="./winetasting.html" class="menuItem">Wine Tasting</a>
+            <a href="./aboutus.html" class="menuItem">The  Wine's Journey</a>
+            <a href="./contact.html" class="menuItem">Contact Us</a>
+            <img class="curlyRuler" src="./assets/menuCurlyRuler.svg" alt="curly ruler">
+        </div>
+        <div id="bottomLogo">
+            <img id="bottomLogoIMG" src="./assets/winerylogoBottom.png" alt="logoBottom">
+        </div>       
+    </section>
+
+    <section style="margin-left: 215px;">
+
+        
+        <div id="wineTastingContent">
+            <img src="./assets/winetasting/horizontalRulerWinetasting.png" alt="">
+            <h1>Wine Tasting Events</h1>
+            <h2>Join us for an unforgettable wine tasting experience at Daniel's Winery! Our events are designed to delight your senses and expand your appreciation for fine wines.</h2>
+            <h2 class="wineTastingTitles">Upcoming Events</h2>
+            <ul>
+                <li><strong>Spring Wine Tasting:</strong> March 15, 2026 - Explore our selection of crisp whites and light reds perfect for the season.</li>
+                <li><strong>Summer Sunset Sips:</strong> July 20, 2026 - Enjoy a variety of refreshing whites and chilled wines as the sun sets.</li>
+                <li><strong>Autumn Harvest Celebration:</strong> October 10, 2026 - Savor rich reds and hearty blends that capture the essence of fall.</li>
+                <li><strong>Winter Warmers:</strong> December 5, 2026 - Indulge in full-bodied reds and dessert wines to warm you up during the chilly season.</li>
+            </ul>
+            <h2 class="wineTastingTitles">Event Details</h2>
+            <p style="margin:0px">Each wine tasting event includes:</p>
+            <ul>
+                <li>A guided tasting session led by our expert sommeliers.</li>
+                <li>A selection of carefully curated wines paired with gourmet appetizers.</li>
+                <li>An opportunity to learn about wine production, tasting techniques, and food pairings.</li>
+                <li>A chance to purchase your favorite wines at exclusive event discounts.</li>
+            </ul>
+            <h2 class="wineTastingTitles">Reserve Your Spot</h2>
+            <p style="margin: 0px;">Spaces are limited! Reserve your spot now for any of our upcoming wine tasting events below.</p>
+            <div id="selectDiv">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required class="textArea">
+            <br>
+ 
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required class="textArea">
+            <br>
+ 
+             <label for="message">Mobile Number:</label>
+            <input type="number" id="number" name="number" required class="textArea">
+            <br>
+            <label for="event">Choose an event:</label>
+        
+            <select name="event" id="event">
+                <option value="March 15, 2026">March 15, 2026</option>
+                <option value="July 20, 2026">July 20, 2026</option>
+                <option value="October 10, 2026">October 10, 2026</option>
+                <option value="December 5, 2026">December 5, 2026</option>
+            </select>
+            </div>
+            
+            <br>
+            <button type="submit" id="sendButton">Send</button>
+            <br>
+            </form>
+            
+            <div class="horizontalRuler2">
+                <img src="./assets/winetasting/horizontalRuler2.png" alt="horizontal Ruler" id="horizontalRuler2">
+            </div>
+
+            <h2 id="customEventh2">Special Events Tailored for You</h2>
+
+            <div id="wineTastingEventDisplay">
+                <div id="wineTastingEventImageContainer">
+                    
+                    <img  alt="Wine Tasting Image" id="wineTastingEventImage">
+                    
+                    <button class="leftArrow aboutUsArrow" id="wineTastingLeftArrow"><img class="arrow" src="./assets/wines/leftarrow.svg" alt="left arrow button"></button>
+                    
+                    
+                    <button class="rightArrow aboutUsArrow" id="wineTastingRightArrow"><img class="arrow" src="./assets/wines/rightarrow.svg" alt="right arrow button"></button>
+                    
+                </div>
+                <div id="wineTastingEventText">
+                    
+                <h3 id="wineTastingEventTitle" style="font-weight: 200;"></h3>
+                <p id="wineTastingEventParagraph"></p>
+                </div>
+            </div>
+    </section>
+
+    <script src="./winetasting.js" type="module"></script>
+</body>
+</html>
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel's winery</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merienda:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section id="menuSection">
+        <div id="logo">
+            <img id="logoIMG" src="./assets/winerylogo.png" alt="logo">
+            <img id="horizontalRule" src="./assets/menuHorRuler.svg" alt="horizontal ruler">
+        </div>
+        <div id="motto">
+            <h2>Wine is our passion.</h2>
+            <img class="curlyRuler" src="./assets/menuCurlyRuler.svg" alt="curly ruler">
+        </div>
+        <div id="menu">
+            <a href="index.html" class="menuItem">Home</a>
+            <a href="./wines.html" class="menuItem">Wines</a>
+            <a href="./winetasting.html" class="menuItem">Wine Tasting</a>
+            <a href="./aboutus.html" class="menuItem">The  Wine's Journey</a>
+            <a href="./contact.html" class="menuItem">Contact Us</a>
+            <img class="curlyRuler" src="./assets/menuCurlyRuler.svg" alt="curly ruler">
+        </div>
+        <div id="bottomLogo">
+            <img id="bottomLogoIMG" src="./assets/winerylogoBottom.png" alt="logoBottom">
+        </div>
+    </section>
+
+    <section id="winesContentSection">
+        <div id="winesContent">
+            <h1 class="fadeInText">Taste our wines, in which the taste of time and passion merge.</h1>
+            <h2 class="fadeInText">-Delicate details, noble aromas, and a moment of eternity in every sip.</h2>      
+        </div>
+
+        <div id="winesDIV">
+
+            <div class="wineIMGcontainer">
+                <div class="wines" data-images='["EstateGold2003.png", "EstateGoldBox.png", "EstateGoldOuterBox.png"]'>                
+                    <button class="leftArrow" id="estateGoldLeftArrow"><img class="arrow" src="./assets/wines/leftarrow.svg" alt="left arrow button"></button>
+                    <img class="winesIMG" id="estateGold" src="./assets/wines/EstateGold2003.png" alt="Estate Gold 2003">
+                    <button class="rightArrow" id="estateGoldRightArrow"><img class="arrow" src="./assets/wines/rightarrow.svg" alt="right arrow button"></button>
+                </div>
+                <div class="wineDescription" style="margin-top: 0px;">
+                    <h2 class="wineTitle" style="color: gold;">Estate Gold</h2>
+                    <p>Estate Gold embodies timeless sophistication — a red wine gracefully matured in oak barrels, where patience and craftsmanship meet. <br> 
+                        A perfect companion to beef, game, and aged cheeses, where every bite enhances its noble character.
+                       </p>
+                </div>
+            </div>
+
+            <div class="wineIMGcontainer">
+                    <div class="wineDescription">
+                        <h2 class="wineTitle">Chardonnay</h2>
+                        <p>A popular white wine known for its versatility, ranging from crisp and citrusy to rich and buttery. <br> Complements poultry, seafood, and creamy dishes.</p>
+                    </div>
+                        <div class="wines" data-images='["Chardonnay.png", "ChardonnayBox.png", "ChardonnayOuterBox.png"]'>
+                            <button class="leftArrow" ><img class="arrow" src="./assets/wines/leftarrow.svg" alt="left arrow button"></button>
+                            <img class="winesIMG" src="./assets/wines/Chardonnay.png" alt="Chardonnay" id="Chardonnay">
+                            <button class="rightArrow"><img class="arrow" src="./assets/wines/rightarrow.svg" alt="right arrow button"></button>
+                        </div>
+            </div>
+
+            <div class="wineIMGcontainer">
+                <div class="wines" data-images='["CabSav.png", "CabSavBox.png", "CabSavOuterBox.png"]'>
+                    <button class="leftArrow" ><img class="arrow" src="./assets/wines/leftarrow.svg" alt="left arrow button"></button>
+                    <img class="winesIMG" src="./assets/wines/CabSav.png" alt="Cabernet Sauvignon" id="CabSav">
+                    <button class="rightArrow"><img class="arrow" src="./assets/wines/rightarrow.svg" alt="right arrow button"></button>
+                </div>
+                <div class="wineDescription">
+                    <h2 class="wineTitle">Cabernet Sauvignon</h2>
+                    <p>A full-bodied red wine with dark fruit flavors and savory tastes from black pepper to bell pepper. <br> Pairs well with red meats and strong cheeses.</p>
+                </div>
+            </div>
+
+            <div class="wineIMGcontainer">
+                <div class="wineDescription">
+                    <h2 class="wineTitle">Merlot</h2>
+                    <p>A crisp and refreshing white wine with high acidity and flavors of green apple, lime, and tropical fruits. <br> Perfect with salads, seafood, and goat cheese.</p>
+                </div>
+                <div class="wines" data-images='["Merlot.png", "MerlotBox.png", "MerlotOuterBox.png"]'>
+                        <button class="leftArrow" ><img class="arrow" src="./assets/wines/leftarrow.svg" alt="left arrow button"></button>
+                        <img class="winesIMG" src="./assets/wines/Merlot.png" alt="Merlot">
+                        <button class="rightArrow"><img class="arrow" src="./assets/wines/rightarrow.svg" alt="right arrow button"></button>
+                    </div>
+            </div> 
+
+            <div class="wineIMGcontainer">
+                    <div class="wines" data-images='["PinotNoir.png", "PinotNoirBox.png", "PinotNoirOuterBox.png"]'>
+                        <button class="leftArrow" ><img class="arrow" src="./assets/wines/leftarrow.svg" alt="left arrow button"></button>
+                        <img class="winesIMG" src="./assets/wines/PinotNoir.png" alt="Pinot Noir">
+                        <button class="rightArrow"><img class="arrow" src="./assets/wines/rightarrow.svg" alt="right arrow button"></button>
+                    </div>
+                    <div class="wineDescription">
+                        <h2 class="wineTitle">Pinot Noir</h2>
+                        <p>A light to medium-bodied red wine with red fruit flavors and earthy undertones. <br> Ideal with dishes like duck, salmon, and mushroom-based recipes.</p>
+                    </div>
+            </div>
+            
+        </div>
+
+    </section>
+    <script src="./winesScript.js"></script>
+</body>
+</html>
